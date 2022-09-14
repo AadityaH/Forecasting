@@ -9,7 +9,7 @@ import json
 import requests
 import numpy as np
 from  PIL import Image
-
+@st.cache
 ## Define Functions to call lottie Animations
 def load_lottieurl(url:str):
     r = requests.get(url)
